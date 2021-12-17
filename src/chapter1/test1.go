@@ -24,7 +24,7 @@ func comsumer(channel <-chan string) {
 		//从通道中取出数据，此时会阻塞 直到取出数据
 		message := <-channel
 		//打印数据
-		fmt.Printf(message)
+		fmt.Println(message)
 	}
 }
 
